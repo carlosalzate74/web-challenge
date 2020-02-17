@@ -3,5 +3,23 @@
 }
 
 .container-title {
+  color: #C7D3D4FF;
+}
+
+.fa {
+  color: #C7D3D4FF;
+}
+
+.fa-drop {
   color: #603F83FF;
+}
+
+.navbar-bk {
+	background-color: #603F83FF !important;
+}
+
+.display-3 {
+    font-size: 3rem;
+    font-weight: 250;
+    line-height: 1.2;
 }
