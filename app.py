@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, render_template, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 # Flask Routes
 @app.route("/")
 def landing():
