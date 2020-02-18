@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Flask Routes
 @app.route("/")
 def landing():
-    return send_from_directory('', 'index.html')
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
