@@ -12,5 +12,13 @@ def index():
 def landing():
     return render_template('landing.html')
 
+@app.route("/comparison")
+def comparison():
+    return render_template('comparison.html')
+
+@app.route("/data")
+def data():
+    return render_template('data.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
