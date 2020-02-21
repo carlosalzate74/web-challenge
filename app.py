@@ -15,9 +15,21 @@ def landing():
     return render_template("landing.html")
 
 
-@app.route("/comparison")
-def comparison():
-    return render_template("comparison.html")
+@app.route("/cloudiness")
+def cloudiness():
+    return render_template("cloudiness.html")
+
+@app.route("/humidity")
+def humidity():
+    return render_template("humidity.html")
+
+@app.route("/temperature")
+def temperature():
+    return render_template("temperature.html")
+
+@app.route("/wind")
+def wind():
+    return render_template("wind.html")
 
 
 @app.route("/data")
@@ -35,14 +47,7 @@ def data():
                 "wind.speed": "Wind Speed"})
 	df = df.sort_values(by=['City Id'])
 	
-
-	# females = data.loc[data.Gender=='F']
-	# return render_template('data.html', target=data)
-	print(df[:2])
 	return render_template("data.html", column_names=df.columns.values, data=list(df.values.tolist()))
-	# return render_template('data.html',  table=[df], titles=df.columns.values)
-	# return render_template("data.html", table=[df[:2].to_html(classes='data')])
-	# return render_template("data.html")
 
 
 if __name__ == "__main__":

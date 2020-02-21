@@ -66,6 +66,8 @@ a {
 }
 
 .my-image-float { 	
+	width: 50%;
+  	max-height: 50%;
 	padding: 0 10px 0 0;
 	float: left;
 } 
@@ -79,7 +81,22 @@ p{
 }
 
 .col-lg-7 {
-	padding-right: 200px;
+	padding-right: 40px;
+}
+
+.opaque{
+	opacity: 0.5;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #354649;
+    text-decoration: none;
+    background-color: #E0E7E9 !important;
+}
+
+p.click{
+	font-size: 0.7rem;
 }
 
 
