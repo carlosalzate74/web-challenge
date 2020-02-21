@@ -31,6 +31,9 @@ def temperature():
 def wind():
     return render_template("wind.html")
 
+@app.route("/comparison")
+def comparison():
+    return render_template("comparison.html")
 
 @app.route("/data")
 def data():
