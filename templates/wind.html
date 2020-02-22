@@ -7,11 +7,12 @@
 				<!-- Container Content -->
 				<h3>Summary: Latitude vs Wind Speed</h3>
 				<hr class="my-4">
+				<p><i class="fa fa-info info"></i> Click on any plot to have an in-depth analysis.</p>
 				<p><img class="my-image-float" src="static/lat_wind.png"></p>
 
-				<p class="text-float">The purpose of this project is to analyze how weather changes as you get closer to the Equator. To accomplish this analysis, we pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+				<p class="text-float">Since Latitud is the angular distance from the Equator, from the Latitud vs Wind Speed chart and based on the sample on over 500 cities, we could say there is an <b>average close to 10mph</b> when getting closer to the Equator.</p>
 				
-				<p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: Temperature, Cloudiness, Wind Speed and Humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+				<p> In particular, wind direction show little improvement in the study at some levels, but those could not be statistically significant. Temperature improvements appear better than the wind improvements.</p>
 			</div>
 
 			<div class="col-lg-5 col-md-12">
@@ -20,21 +21,23 @@
 				<hr class="my-4">
 				<div class="row">
 					<div class="col-md-6 col-sm-3 opaque">
-						<a href="/cloudiness">
-							<img class="my-image" src="static/lat_cloud.png" data-toggle="tooltip" title="Latitude vs. Cloudiness">
-						</a>
+						<a href="/temperature">
+					  		<img class="my-image" src="static/lat_temp.png" data-toggle="tooltip" title="Latitude vs. Temperature">
+					  	</a>
 					</div>
+
 					<div class="col-md-6 col-sm-3 opaque">
 						<a href="/humidity">
 							<img class="my-image" src="static/lat_hum.png" data-toggle="tooltip" title="Latitude vs. Humidity">
 						</a>
 					</div>
-				
+
 					<div class="col-md-6 col-sm-3 opaque">
-						<a href="/temperature">
-					  		<img class="my-image" src="static/lat_temp.png" data-toggle="tooltip" title="Latitude vs. Temperature">
-					  	</a>
+						<a href="/cloudiness">
+							<img class="my-image" src="static/lat_cloud.png" data-toggle="tooltip" title="Latitude vs. Cloudiness">
+						</a>
 					</div>
+					
 					<div class="col-md-6 col-sm-3">
 						<a href="/wind">
 				  			<img class="my-image" src="static/lat_wind.png"data-toggle="tooltip" title="Latitude vs. Wind Speed">
